@@ -8,7 +8,7 @@ CORONET is an online tool to support decisions regarding hospital admissions or 
 The tool is available at:
 https://coronet.manchester.ac.uk/
 
-This repository contains code to develop a CORORONET model used in the tool to generate recommendation.
+This repository contains the code to develop the CORONET model used in the recommendation generation tool.
 
 Detailed description of the process of developing CORONET can be found in our publication:
 [link to preprint]

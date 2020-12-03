@@ -10,7 +10,7 @@ https://coronet.manchester.ac.uk/
 
 This repository contains the code to develop the CORONET model used in the recommendation generation tool.
 
-Detailed description of the process of developing CORONET can be found in our publication:
+Detailed description of the process of developing CORONET can be found in our publication [preprint]:
 
 Establishment of CORONET; COVID-19 Risk in Oncology Evaluation Tool to identify cancer patients at low versus high risk of severe complications of COVID-19 infection upon presentation to hospital
 

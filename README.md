@@ -1,4 +1,4 @@
-![coronet_front_logo.PNG](attachment:2a3ad364-620c-41c1-9c51-fcc305783d50.PNG)
+![coronet_front_logo.PNG]
 
 # CORONET
 COVID-19 Risk in Oncology Evaluation Tool

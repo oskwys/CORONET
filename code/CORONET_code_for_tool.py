@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import joblib
+
 
 
 def predict_and_explain(x, model, explainer, plot_expl_barplot = True, path_to_save_plots=''):
@@ -62,6 +64,53 @@ def predict_and_explain(x, model, explainer, plot_expl_barplot = True, path_to_s
         plot_local_explanation_shap(explanation, x, path_to_save_plots)
 
     return prediction, explanation
+
+def load_predictive_model(file_path):
+    """
+     Loads predictive model stored in a .pkl file from 'file_path'
+     The model is a Random Forest model trained using sklearn library and saved to .pkl file using joblib library (using joblib.dump command)
+     required libraries:
+      joblib
+
+    Parameters:
+    -----------
+     file_path : str
+     Path where the model is stored
+
+
+    Return
+    ------
+    model : object sklearn regression model
+    """
+
+    model = joblib.load(file_path)
+
+    return model
+
+def load_explainer(file_path):
+    """
+    Loads explainer stored in a .pkl file from 'file_path'
+    The explainer is a Explainer from SHAP library (https://github.com/slundberg/shap)
+    created using function shap.TreeExplainer(model), where 'model' is the predictive model used in CORONET
+    and saved to .pkl file using joblib library (using joblib.dump command)
+    required libraries:
+       joblib
+
+    Parameters:
+    -----------
+     file_path : str
+     Path where the explainer is stored
+     
+
+    Return
+    ------
+    explainer : object shap explainer
+    """
+
+
+    explainer = joblib.load(file_path)
+
+    return explainer
 
 
 def get_prediction_for_x(x, model, admission_threshold, severe_condition_threshold):

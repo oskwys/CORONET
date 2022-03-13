@@ -1,10 +1,11 @@
 ![coronet_front_logo.PNG](/coronet_front_logo.PNG)
 
 ------
-update:
+UPDATE:
+
 current version of the repository at: https://github.com/digital-ECMT/CORONET_tool
 
-
+------
 CORONET is an online tool to support decisions regarding hospital admissions or discharge in cancer patients presenting with symptoms of COVID-19 and the likely severity of illness. It is based on real world patient data.
 
 The tool is available at:
